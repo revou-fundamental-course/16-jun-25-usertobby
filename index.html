@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,97 @@
 
 <body>
     <!-- Head Content -->
-     <header></header>
+     <header>
+        <h1>Welcome to My Simple Calculator</h1>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+        <!-- Navigation -->
+        <nav>
+            <a class="bg-cornflowerblue" href="">Segitiga</a>
+            <a class="bg-cornflowerblue" href="">Jajar genjang</a>
+        </nav>
+     </header>
 
     <!-- Main Content -->
-    <main></main>
+    <main>
+        <!-- Luas -->
+         <section>
+            <header>
+                <h2>Luas Segitiga</h2>
+            </header>
+
+            <!-- Konten Luas -->
+            <div class="formula-img img-luas"></div>
+
+            <p>Rumus Luas Segitiga: 1/2 * alas * tinggi</p>
+
+            <!-- Form Luas -->
+            <form>
+                <header>
+                    <h2>Form Luas Segitiga</h2>
+                </header>
+
+                <div>
+                    <label for="alas">Alas:</label>
+                    <input type="number" id="alas" name="alas" placeholder="Masukkan alas segitiga" required>
+                </div>
+
+                <div>
+                    <label for="tinggi">Tinggi:</label>
+                    <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan tinggi segitiga" required>
+                </div>
+
+                <div>
+                    <button type="submit">Hitung Luas</button>
+                </div>    
+            </form>
+         </section>
+
+        <!-- Keliling -->
+         <section>
+            <header>
+                <h2>Keliling Segitiga</h2>
+            </header>
+
+            <!-- Konten Keliling -->
+            <div class="formula-img img-keliling"></div>
+
+            <p>Rumus Keliling Segitiga: sisi1 + sisi2 + sisi3</p>
+
+            <!-- Form Keliling -->
+            <form>
+                <header>
+                    <h2>Form Keliling Segitiga</h2>
+                </header>
+
+                <div>
+                    <label for="sisi1">Sisi 1:</label>
+                    <input type="number" id="sisi1" name="sisi1" placeholder="Masukkan sisi 1 segitiga" required>
+                </div>
+
+                <div>
+                    <label for="sisi2">Sisi 2:</label>
+                    <input type="number" id="sisi2" name="sisi2" placeholder="Masukkan sisi 2 segitiga" required>
+                </div>
+
+                <div>
+                    <label for="sisi3">Sisi 3:</label>
+                    <input type="number" id="sisi3" name="sisi3" placeholder="Masukkan sisi 3 segitiga" required>
+                </div>
+
+                <div>
+                    <button type="submit">Hitung Keliling</button>
+                </div>
+            </form>
+         </section>
+
+    </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer>
+        <p>&copy; 2025 Tobby. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
