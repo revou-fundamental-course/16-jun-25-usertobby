@@ -2,6 +2,10 @@ body {
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     text-align: center;
 }
@@ -38,7 +42,6 @@ main > section {
 .formula-img {
     border: 1px solid;
     height: 200px;
-    width: 500px;
     background-position: center;
     background-size: cover;
     margin: auto;
@@ -75,8 +78,15 @@ footer {
     margin-top: 20px;
     font-family: sans-serif;
     font-size: 0.8em;
-    color: #666;
+    color: #8f8e8e;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #181818;
     border-top: 1px solid #ccc;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
 }

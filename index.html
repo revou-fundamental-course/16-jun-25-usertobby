@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Website - tobby</title>
-    <link rel="icon" type="image" href="favicon-logo.png">
+    <title>Kalkulator Segitiga - tobby</title>
+
+    <!-- Tab icons -->
+    <link rel="icon" type="image" href="assets\icons8-calculator-50.png" alt="Calculator icon by Icons8">
 
     <!-- CSS External Links -->
     <link rel="stylesheet" href="css\style.css">
@@ -16,20 +18,20 @@
      <header>
         <h1>Kalkulator Segitiga</h1>
 
-        <p>Segitiga adalah bangun datar dengan tiga sisi dan tiga sudut, di mana jumlah sudutnya selalu 180 derajat.<br>
-        Segitiga dapat dihitung luas dan kelilingnya menggunakan rumus khusus.</p>
+        <p>Selamat datang di website Kalkulator Segitiga. Sebelum itu, Anda perlu paham bahwa Segitiga adalah sebuah bangun datar dengan tiga sisi. Segitiga dapat dihitung luas dan kelilingnya menggunakan rumus khusus seperti di bawah ini!</p>
         <hr>
+
         <!-- Navigation -->
         <nav>
-            <a class="bg-cornflowerblue" href="">Segitiga</a>
-            <a class="bg-cornflowerblue" href="">Jajar genjang</a>
+            <a class="bg-cornflowerblue" href="#section-luas">Luas Segitiga</a>
+            <a class="bg-cornflowerblue" href="#section-keliling">Keliling Segitiga</a>
         </nav>
      </header>
 
     <!-- Main Content -->
     <main>
         <!-- Luas -->
-         <section>
+         <section id="section-luas">
             <header>
                 <h2>Luas Segitiga</h2>
             </header>
@@ -37,7 +39,7 @@
             <!-- Konten Luas -->
             <div class="formula-img img-luas"></div>
 
-            <p>Rumus Luas Segitiga: 1/2 * alas * tinggi</p>
+            <p><b>Rumus Luas Segitiga: 1/2 * Alas * Tinggi</b></p>
 
             <!-- Form Luas -->
             <form>
@@ -55,14 +57,20 @@
                     <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan tinggi segitiga" required>
                 </div>
 
+                <div class="form-button">
+                    <button onclick="luasSegitiga(event)">Hitung</button>
+                    <button onclick="resetLuas()">Reset</button>
+                </div>
+
                 <div>
-                    <button>Hitung Luas</button>
-                </div>    
+                    <p id="luas" class="hasil"></p>
+                </div>
+
             </form>
          </section>
 
         <!-- Keliling -->
-         <section>
+         <section id="section-keliling">
             <header>
                 <h2>Keliling Segitiga</h2>
             </header>
@@ -70,7 +78,7 @@
             <!-- Konten Keliling -->
             <div class="formula-img img-keliling"></div>
 
-            <p>Rumus Keliling Segitiga: sisi1 + sisi2 + sisi3</p>
+            <p><b>Rumus Keliling Segitiga: Sisi 1 + Sisi 2 + Sisi 3</b></p>
 
             <!-- Form Keliling -->
             <form>
@@ -94,17 +102,24 @@
                 </div>
 
                 <div>
-                    <button>Hitung Keliling</button>
+                    <button onclick="kelilingSegitiga(event)">Hitung</button>
+                    <button onclick="resetKeliling()">Reset</button>
+                </div>
+
+                <div>
+                    <p id="keliling" class="hasil"></p>
                 </div>
             </form>
          </section>
-
     </main>
 
     <!-- Footer Content -->
     <footer>
         <p>&copy; 2025 Tobby. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript External Links -->
+    <script src="js\script.js"></script>
 </body>
 
 </html>
