@@ -18,13 +18,13 @@
      <header>
         <h1>Kalkulator Segitiga</h1>
 
-        <p>Selamat datang di website Kalkulator Segitiga. Sebelum itu, Anda perlu paham bahwa Segitiga adalah sebuah bangun datar dengan tiga sisi. Segitiga dapat dihitung luas dan kelilingnya menggunakan rumus khusus seperti di bawah ini!</p>
+        <p>Selamat datang di website Kalkulator Segitiga. Segitiga dapat dihitung luas dan kelilingnya menggunakan rumus khusus seperti di bawah ini!</p>
         <hr>
 
         <!-- Navigation -->
         <nav>
-            <a class="bg-cornflowerblue" href="#section-luas">Luas Segitiga</a>
-            <a class="bg-cornflowerblue" href="#section-keliling">Keliling Segitiga</a>
+            <a class="bg-gray" href="#section-luas">Luas Segitiga</a>
+            <a class="bg-gray" href="#section-keliling">Keliling Segitiga</a>
         </nav>
      </header>
 
@@ -37,24 +37,25 @@
             </header>
 
             <!-- Konten Luas -->
-            <div class="formula-img img-luas"></div>
+            <img src="assets\luas-segitiga.png" class="formula-img img-luas">
 
-            <p><b>Rumus Luas Segitiga: 1/2 * Alas * Tinggi</b></p>
+            <p>Rumus Luas Segitiga:<br>
+                <b>L = 1/2 x Alas x Tinggi</b></p>
 
             <!-- Form Luas -->
             <form>
                 <header>
-                    <h2>Form Luas Segitiga</h2>
+                    <h2></h2>
                 </header>
 
                 <div>
                     <label for="alas">Alas:</label>
-                    <input type="number" id="alas" name="alas" placeholder="Masukkan alas segitiga" required>
+                    <input type="number" id="alas" name="alas" placeholder="Alas" required>
                 </div>
 
                 <div>
                     <label for="tinggi">Tinggi:</label>
-                    <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan tinggi segitiga" required>
+                    <input type="number" id="tinggi" name="tinggi" placeholder="Tinggi" required>
                 </div>
 
                 <div class="form-button">
@@ -76,32 +77,33 @@
             </header>
 
             <!-- Konten Keliling -->
-            <div class="formula-img img-keliling"></div>
+            <img src="assets\keliling-segitiga.png" class="formula-img img-keliling">
 
-            <p><b>Rumus Keliling Segitiga: Sisi 1 + Sisi 2 + Sisi 3</b></p>
+            <p>Rumus Keliling Segitiga:<br>
+                <b>K = Sisi A + Sisi B + Sisi C</b></p>
 
             <!-- Form Keliling -->
             <form>
                 <header>
-                    <h2>Form Keliling Segitiga</h2>
+                    <h2></h2>
                 </header>
 
                 <div>
-                    <label for="sisi1">Sisi 1:</label>
-                    <input type="number" id="sisi1" name="sisi1" placeholder="Masukkan sisi 1 segitiga" required>
+                    <label for="sisiA">Sisi A:</label>
+                    <input type="number" id="sisiA" name="sisiA" placeholder="Sisi A" required>
                 </div>
 
                 <div>
-                    <label for="sisi2">Sisi 2:</label>
-                    <input type="number" id="sisi2" name="sisi2" placeholder="Masukkan sisi 2 segitiga" required>
+                    <label for="sisiB">Sisi B:</label>
+                    <input type="number" id="sisiB" name="sisiB" placeholder="Sisi B" required>
                 </div>
 
                 <div>
-                    <label for="sisi3">Sisi 3:</label>
-                    <input type="number" id="sisi3" name="sisi3" placeholder="Masukkan sisi 3 segitiga" required>
+                    <label for="sisiC">Sisi C:</label>
+                    <input type="number" id="sisiC" name="sisiC" placeholder="Sisi C" required>
                 </div>
 
-                <div>
+                <div class="form-button">
                     <button onclick="kelilingSegitiga(event)">Hitung</button>
                     <button onclick="resetKeliling()">Reset</button>
                 </div>
