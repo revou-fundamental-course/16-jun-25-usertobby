@@ -1,3 +1,4 @@
+// Luas Segitiga
 function luasSegitiga(event) {
     event.preventDefault();
 
@@ -7,12 +8,12 @@ function luasSegitiga(event) {
     const hasil = document.getElementById("luas");
 
     if (isNaN(alas) || isNaN(tinggi)) {
-        alert("Mohon masukkan angka yang valid untuk alas dan tinggi.");
+        alert("Masukkan angka yang valid untuk Alas dan Tinggi");
         return;
     }
 
     if (alas <= 0 || tinggi <= 0) {
-        alert("Mohon masukkan angka yang lebih besar dari 0 untuk alas dan tinggi.");
+        alert("Angka harus lebih besar dari 0");
         return;
     }
 
@@ -26,32 +27,33 @@ function resetLuas() {
     document.getElementById("luas").textContent = "";
 }
 
+// Keliling Segitiga
 function kelilingSegitiga(event) {
     event.preventDefault();
 
-    const sisi1 = parseFloat(document.getElementById("sisi1").value);
-    const sisi2 = parseFloat(document.getElementById("sisi2").value);
-    const sisi3 = parseFloat(document.getElementById("sisi3").value);
+    const sisiA = parseFloat(document.getElementById("sisiA").value);
+    const sisiB = parseFloat(document.getElementById("sisiB").value);
+    const sisiC = parseFloat(document.getElementById("sisiC").value);
 
     const hasilKeliling = document.getElementById("keliling");
 
-    if (isNaN(sisi1) || isNaN(sisi2) || isNaN(sisi3)) {
-        alert("Mohon masukkan angka yang valid untuk semua sisi.");
+    if (isNaN(sisiA) || isNaN(sisiB) || isNaN(sisiC)) {
+        alert("Masukkan angka yang valid untuk semua sisi");
         return;
     }
 
-    if (sisi1 <= 0 || sisi2 <= 0 || sisi3 <= 0) {
-        alert("Mohon masukkan angka yang lebih besar dari 0 untuk semua sisi.");
+    if (sisiA <= 0 || sisiB <= 0 || sisiC <= 0) {
+        alert("Angka harus lebih besar dari 0");
         return;
     }
 
-    const keliling = sisi1 + sisi2 + sisi3;
+    const keliling = sisiA + sisiB + sisiC;
     hasilKeliling.textContent = `Keliling Segitiga = ${keliling} cm`;
 }
 
 function resetKeliling() {
-    document.getElementById("sisi1").value = "";
-    document.getElementById("sisi2").value = "";
-    document.getElementById("sisi3").value = "";
+    document.getElementById("sisiA").value = "";
+    document.getElementById("sisiB").value = "";
+    document.getElementById("sisiC").value = "";
     document.getElementById("keliling").textContent = "";
 }
