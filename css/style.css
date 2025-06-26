@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 html {
@@ -18,15 +18,22 @@ nav {
 }
 
 nav a {
-    height: 50px;
-    border-radius: 8px;
-    align-content: center;
+    background-color: #444;
+    color: white;
+    padding: 10px 50px;
+    margin: 0 0.5rem;
     text-decoration: none;
-    color: #333;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
 }
 
-.bg-cornflowerblue {
-    background-color: #6495ED;
+nav a:hover {
+  background-color: #666;
+}
+
+.bg-gray {
+    background-color: #2e2e2e;
 }
 
 main {
@@ -47,14 +54,6 @@ main > section {
     margin: auto;
 }
 
-.img-luas {
-    background-image: url(https://fastly.picsum.photos/id/1024/500/200.jpg?hmac=nxdGwPqDPcZZYopaGoz5uUWQdEQqw_CEy0ANaVOmz2M);
-}
-
-.img-keliling {
-    background-image: url(https://fastly.picsum.photos/id/574/500/200.jpg?hmac=eLc9v-Mvs22r6q9na_TDm6pq808IIHddBZeM_pHKCE4);
-}
-
 /* Form Style */
 input[type=number] {
     width: 100%;
@@ -67,21 +66,25 @@ input[type=number] {
 }
 
 button {
-    background-color: #6092E9;
-    border: none;
+    background-color: transparent;
+    border: 1px solid #2e2e2e;
     padding: 8px;
     border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
+.form-button button:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 20px;
     font-family: sans-serif;
-    font-size: 0.8em;
-    color: #8f8e8e;
-    padding: 10px;
-    background-color: #181818;
-    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
 }
 
 /* Responsive Design */
